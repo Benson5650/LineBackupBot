@@ -1,0 +1,6 @@
+line-bot-sdk
+flask
+google-api-python-client
+celery 
+redis
+portalocker
