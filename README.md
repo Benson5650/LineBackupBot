@@ -126,7 +126,7 @@
 
    - 正式使用建議搭配 [uwsgi](https://hackmd.io/@luluxiu/By2ZsccgT)
 
-3. **取得公開的https連線** 
+3. **取得公開的 https 連線** 
    - 若沒有公網 ip 和 ssl 證書，可以使用 [ngrok](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjywb6B-uOKAxWaka8BHViqLX0QFnoECAwQAQ&url=https%3A%2F%2Fngrok.com%2F&usg=AOvVaw0qg9kSksx3M4uUIoIqmJI3&opi=89978449)。
 
    - [教學](https://ithelp.ithome.com.tw/m/articles/10295654)
