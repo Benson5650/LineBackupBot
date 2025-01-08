@@ -1,4 +1,4 @@
-# LineBackupBot 賴群檔案備份機器人
+# Line Backup Bot 賴群檔案備份機器人
 
 這個專案使用 **Flask** 和 **Line Messaging API (v3)** 打造了一個 Line Bot，能夠備份群組或是對話圖片、影音和檔案等內容。你還可以啟用 Google Drive 雲端同步的功能，讓檔案管理變得更輕鬆方便。
 
