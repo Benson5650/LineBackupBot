@@ -135,4 +135,12 @@ cython_debug/
 # Other
 ngrok.exe
 static/tmp/
+config.json
 folder_map.json
+oathtemplate.json
+test.py
+.vscode
+client_secret.json
+client_secrets.json
+robots.txt
+uwsgi.ini

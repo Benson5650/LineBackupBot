@@ -1,6 +1,9 @@
-line-bot-sdk
-flask
-google-api-python-client
-celery 
-redis
-portalocker
+line-bot-sdk==3.14.5
+flask==3.0.0
+google-api-python-client==2.108.0
+celery==5.3.6
+redis==5.0.1
+portalocker==2.8.2
+google-auth-oauthlib==1.1.0
+pymysql==1.1.0
+DBUtils==3.0.3

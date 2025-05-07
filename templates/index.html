@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>LINE Bot Google Drive 同步工具</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .instructions {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .command {
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>LINE Bot Google Drive 同步工具</h1>
+    
+    <div class="instructions">
+        <h2>使用說明</h2>
+        <h3>基本指令：</h3>
+        <ul>
+            <li><span class="command">!bindgoogle</span> - 綁定 Google 帳號</li>
+            <li><span class="command">!unbindgoogle</span> - 解除 Google 帳號綁定</li>
+            <li><span class="command">!bindgroup</span> - 綁定群組（可在群組中直接使用，或在私訊中加上群組 ID/名稱時間）</li>
+            <li><span class="command">!unbindgroup</span> - 解除群組綁定（使用方式同上）</li>
+            <li><span class="command">!listgroup</span> - 列出已綁定群組</li>
+            <li><span class="command">!help</span> - 顯示完整指令說明</li>
+        </ul>
+
+        <h3>功能特點：</h3>
+        <ul>
+            <li>自動將 LINE 群組中的圖片、影片、音訊和檔案同步至 Google Drive</li>
+            <li>支援多人綁定同一群組</li>
+            <li>支援私訊與群組檔案同步</li>
+            <li>提供多種群組綁定方式，包含群組 ID 或名稱時間驗證</li>
+        </ul>
+
+        <h3>使用流程：</h3>
+        <ol>
+            <li>在私訊中輸入 <span class="command">!bindgoogle</span>，依照授權指示完成 Google OAuth。</li>
+            <li>綁定群組可選擇：
+                <ul>
+                    <li>在群組中直接輸入 <span class="command">!bindgroup</span></li>
+                    <li>在私訊中輸入 <span class="command">!bindgroup</span> 加上群組 ID</li>
+                    <li>在私訊中輸入 <span class="command">!bindgroup</span> 加上群組名稱和時間（MMDDHHMM格式24小時制）</li>
+                    <li>例如：<span class="command">!bindgroup 測試群組 01121935</span>即為2025年1月12日19:35分加入的群組</li>
+                </ul>
+            </li>
+            <li>機器人會自動同步檔案至 Google Drive 下的"LineBot"資料夾</li>
+            <li>如需解除綁定，可使用對應的 <span class="command">!unbindgoogle</span> 或 <span class="command">!unbindgroup</span> 指令。</li>
+        </ol>
+
+        <div class="note">
+            <p>注意：使用群組名稱和時間驗證時，每小時限制 5 次嘗試，時間允許正負 1 分鐘誤差。</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <div style="margin-bottom: 20px;">
+                <a href="https://lin.ee/N6SEDxM">
+                    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0">
+                </a>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='QRcode.png') }}" alt="LINE QR Code" style="max-width: 200px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

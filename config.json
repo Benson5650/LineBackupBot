@@ -1,6 +1,0 @@
-{
-    "enable_cloud_sync": true,
-    "UPLOAD_FOLDER": "the parent folder id of google drive to upload files",
-    "channel_secret": "your channel secret",
-    "channel_access_token": "your channel access token"
-}

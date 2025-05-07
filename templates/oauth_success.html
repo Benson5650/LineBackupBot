@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google 帳號授權成功</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .success-icon {
+            color: #4CAF50;
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .message {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .message ul {
+            text-align: left;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .close-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .close-button:hover {
+            background-color: #5a6268;
+        }
+        .button-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✓</div>
+        <h1>授權成功！</h1>
+        <div class="message">
+            <p>您已成功將 Google 帳號與 LINE Bot 連結。</p>
+            <p>現在您可以：</p>
+            <ul>
+                <li>在群組中接收檔案時自動同步到 Google Drive</li>
+                <li>透過私訊傳送檔案到 Google Drive</li>
+            </ul>
+            <p>您可以關閉此視窗並返回 LINE 對話。</p>
+        </div>
+        <div class="button-container">
+            <a href="https://line.me/R/oaMessage/%40765hxobx/" class="close-button">返回 LineBot</a>
+        </div>
+    </div>
+</body>
+</html> 
