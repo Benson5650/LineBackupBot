@@ -2,6 +2,10 @@
 
 一個 LINE Bot，旨在自動將 LINE 聊天（私人訊息和群組聊天）中的檔案（圖片、影片、音訊和其他文件）同步到使用者的 Google Drive。它可以幫助使用者備份 LINE 上分享的重要檔案，無需手動操作。
 
+# 機器人官方網站 
+Host版 無須設定即可啟用 活多久算多久
+點[這裡](https://benson.tcirc.tw/linebot/)然後加入好友
+
 ## 功能特性
 
 *   **Google 帳號整合**：使用 OAuth 2.0 安全地連結您的 Google 帳號。
